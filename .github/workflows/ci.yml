@@ -4,10 +4,10 @@ name: CI
 
 on:
   pull_request:
-    branches: [devel]
+    branches: [devel, devel-phirelink]
 
   push:
-    branches: [devel]
+    branches: [devel, devel-phirelink]
 
 jobs:
   podman:
