@@ -16,6 +16,7 @@ dependencies:
     ---
     collections:
       - name: community.general
+      - name: community.postgresql
       - name: awx.awx
       - name: azure.azcollection
         version: ">=2.1.0"
