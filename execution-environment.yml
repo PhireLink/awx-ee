@@ -31,6 +31,7 @@ dependencies:
       - name: ansible.windows
       - name: redhatinsights.insights
       - name: kubevirt.core
+      - name: containers.podman
   system: |
     git-core [platform:rpm]
     python3.11-devel [platform:rpm compile]
