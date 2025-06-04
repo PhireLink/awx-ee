@@ -9,6 +9,10 @@ on:
   push:
     branches: [devel, devel-phirelink]
 
+  schedule:
+  # build on Sunday so if something breaks we can fix it Monday
+  - cron: '0 0 * * 0'
+
 jobs:
   podman:
     runs-on: ubuntu-24.04
