@@ -8,8 +8,8 @@ dependencies:
     package_system: python3.11
     python_path: /usr/bin/python3.11
   ansible_core:
-    # Require minimum of 2.15 to get ansible-inventory --limit option
-    package_pip: ansible-core>=2.15.0rc2
+    # Require older than 2.17 so it can manage Rocky8 hosts (i.e., Python 3.6)
+    package_pip: ansible-core<2.17
   ansible_runner:
     package_pip: ansible-runner
   galaxy: |
